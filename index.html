@@ -57,7 +57,7 @@
     </div>
     <script>
         $(function () {
-            var socket = new WebSocket("https://websocketki-2a73b78f2ebb.herokuapp.com/ws?username=" +
+            var socket = new WebSocket("wss://websocketki-2a73b78f2ebb.herokuapp.com/ws?username=" +
                 encodeURIComponent($('#username').val()));
 
             socket.onmessage = function (event) {
